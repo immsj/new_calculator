@@ -12,11 +12,16 @@ class Control:
             return f'{num1} + {num2} = {self.sum(num1, num2)}'
         
         else:
-            return "Calculation Error"
+            return "Calculation Error wow"
         
     def connectSignals(self):
+<<<<<<< HEAD
         self.view.btn1.clicked.connect(lambda: self.view.setDisplay(self.calculate()))
         self.view.btn2.clicked.connect(self.view.clearMessage)
         
     def sum(self, a, b):
             return a+b
+=======
+        self.view.btn1.clicked.connect(self.calculate)
+        self.view.btn2.clicked.connect(self.view.clearMessage)
+>>>>>>> parent of bf60f76 (Add sum function in ctrl.py)
